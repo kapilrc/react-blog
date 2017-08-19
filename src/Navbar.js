@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router';
 
 class Navbar extends Component {
   render() {
@@ -6,7 +7,7 @@ class Navbar extends Component {
       <div>
         {/* <!-- Navigation --> */}
         <nav className="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
-          <a className="navbar-brand" href="index.html">Start Bootstrap</a>
+          <Link className="navbar-brand" to="/">Start Bootstrap</Link>
           <button className="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
             Menu
             <i className="fa fa-bars"></i>
@@ -14,16 +15,16 @@ class Navbar extends Component {
           <div className="collapse navbar-collapse" id="navbarResponsive">
             <ul className="navbar-nav ml-auto">
               <li className="nav-item">
-                <a className="nav-link" href="index.html">Home</a>
+                <Link className="nav-link" to="/">Home</Link>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="about.html">About</a>
+                <Link className="nav-link" to="/about-us">About</Link>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="post.html">Sample Post</a>
+                <Link className="nav-link" to="/sample-post">Sample Post</Link>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="contact.html">Contact</a>
+                <Link className="nav-link" to="/contact-us">Contact</Link>
               </li>
             </ul>
           </div>
